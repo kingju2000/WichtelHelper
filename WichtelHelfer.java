@@ -47,6 +47,6 @@ public class WichtelHelfer {
     PrintWriter writer = new PrintWriter(donatorName, "UTF-8");
     writer.println(doneeName);
     writer.close();
-    System.out.println(doneeName);
+    System.out.println("Test);
   }
 }
