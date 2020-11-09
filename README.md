@@ -9,12 +9,12 @@ java 8+
 - download java file
 - compile
 ```
-javac -c WichtelHelper.java
+javac WichtelHelper.java
 ```
 
 - add names of users
 ```
-java Fried1 Friend2 Friend3 WichtelHelper
+java WichtelHelper Fried1 Friend2 Friend3
 ```
 - take the created Files and send them to the Users eg: 
 Friend1.txt to Friend1, Friend2.txt to Friend2 ...
