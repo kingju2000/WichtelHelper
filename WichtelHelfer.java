@@ -18,6 +18,7 @@ public class WichtelHelfer {
     for (int closedPeople = 0; closedPeople < ammountPeople; closedPeople++) {
       String donatorName = args[closedPeople];
       writeTextDocument(donatorName, getRandomPerson(donatorName));
+      System.out.println("Created "+ (closedPeople + 1) + "/" + ammountPeople );
     }
 
   }
@@ -42,10 +43,8 @@ public class WichtelHelfer {
   }
 
   static void writeTextDocument(String donatorName, String doneeName) throws FileNotFoundException, UnsupportedEncodingException {
-    PrintWriter writer = new PrintWriter(donatorName, "UTF-8");
+    PrintWriter writer = new PrintWriter(donatorName + ".txt", "UTF-8");
     writer.println(doneeName);
     writer.close();
-    System.out.println("Test2");
-    System.out.println("Test3");
   }
 }
